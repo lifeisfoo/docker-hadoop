@@ -1,14 +1,14 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 
 ####################
 # JAVA
 ####################
 
-ENV JAVA_HOME		/usr/lib/jvm/java-7-openjdk-amd64
+ENV JAVA_HOME		/usr/lib/jvm/java-8-openjdk-amd64
 
 RUN apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y openjdk-7-jdk && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y openjdk-8-jdk && \
     rm -rf /var/lib/apt/lists/*
 
 
